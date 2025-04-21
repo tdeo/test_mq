@@ -4,14 +4,14 @@
 jobs:
   succesful:
     runs-on: ubuntu-22.04
-    if: ${ always() }
+    if: ${{ always() }}
     steps:
       - run: >
           true
       
   failure:
     runs-on: ubuntu-22.04
-    if: ${ always() }
+    if: ${{ always() }}
     steps:
       - run: >
           false
